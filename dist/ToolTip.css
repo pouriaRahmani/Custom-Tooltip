@@ -1,0 +1,193 @@
+﻿.tooltip {
+    position: relative;
+}
+
+.tooltip::before {
+    content: attr(data-tooltip) !important;
+    position: absolute !important;
+    width: max-content !important;
+    height: max-content !important;
+    background-color: #5728bf;
+    color: #fff;
+    top: calc(100% + 10px) !important;
+    padding: 3px 8px !important;
+    border-radius: 3px !important;
+    font-size: 14px;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index: 9999;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    -ms-border-radius: 3px !important;
+    -o-border-radius: 3px !important;
+}
+
+.tooltip::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 50% !important;
+    border-top: 5px solid transparent !important;
+    border-left: 5px solid transparent !important;
+    border-bottom: 5px solid #5728bf !important;
+    border-right: 5px solid transparent !important;
+    transform: translateX(-50%) !important;
+    top: calc(100% - 0px) !important;
+    -webkit-transform: translateX(-50%) !important;
+    -moz-transform: translateX(-50%) !important;
+    -ms-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index: 9999;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    visibility: visible;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+}
+
+
+/* -----------------font-------------------- */
+
+
+/* tiny font-size */
+
+.tooltip.text-sm::before {
+    font-size: 10px !important;
+}
+
+
+/* medium font-size */
+
+.tooltip.text-md::before {
+    font-size: 12px !important;
+}
+
+
+/* larg font-size */
+
+.tooltip.text-lg::before {
+    font-size: 14px !important;
+}
+
+
+/* Extra-larg font-size */
+
+.tooltip.text-xl::before {
+    font-size: 16px !important;
+}
+
+
+/* -----------------color-------------------- */
+
+
+/* redColor */
+
+.tooltip.text-red::before {
+    color: #dc3545 !important;
+}
+
+.tooltip.bg-red::before {
+    background-color: #dc3545 !important;
+}
+
+.tooltip.bg-red::after {
+    border-bottom-color: #dc3545 !important;
+}
+
+
+/* greenColor */
+
+.tooltip.text-green::before {
+    color: #28a745 !important;
+}
+
+.tooltip.bg-green::before {
+    background-color: #28a745 !important;
+}
+
+.tooltip.bg-green::after {
+    border-bottom-color: #28a745 !important;
+}
+
+
+/* blueColor */
+
+.tooltip.text-blue::before {
+    color: #007bff !important;
+}
+
+.tooltip.bg-blue::before {
+    background-color: #007bff !important;
+}
+
+.tooltip.bg-blue::after {
+    border-bottom-color: #007bff !important;
+}
+
+
+/* yellowColor */
+
+.tooltip.text-yellow::before {
+    color: #ffc107 !important;
+}
+
+.tooltip.bg-yellow::before {
+    background-color: #ffc107 !important;
+}
+
+.tooltip.bg-yellow::after {
+    border-bottom-color: #ffc107 !important;
+}
+
+
+/* lightColor */
+
+.tooltip.text-light::before {
+    color: #f8f9fa !important;
+}
+
+.tooltip.bg-light::before {
+    background-color: #f8f9fa !important;
+}
+
+.tooltip.bg-light::after {
+    border-bottom-color: #f8f9fa !important;
+}
+
+
+/* darkColor */
+
+.tooltip.text-dark::before {
+    color: #343a40 !important;
+}
+
+.tooltip.bg-dark::before {
+    background-color: #343a40 !important;
+}
+
+.tooltip.bg-dark::after {
+    border-bottom-color: #343a40 !important;
+}
